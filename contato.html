@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Psicologia & Bem-Estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>📞 Fale Conosco</h1>
+        <p>Use o formulário abaixo para enviar uma mensagem ou utilize nossos canais de contato direto. Seu primeiro contato é sempre sigiloso.</p>
+        
+        <form action="#" method="POST">
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="agendamento">Agendamento de Consulta</option>
+                    <option value="duvidas">Dúvidas Gerais</option>
+                    <option value="parceria">Parceria</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <h2>Informações Diretas</h2>
+        <ul>
+            <li>**E-mail:** contato@psico.com.br</li>
+            <li>**Telefone/WhatsApp:** (99) 99999-9999</li>
+            <li>**Endereço:** Rua da Acalmação, 123 - Centro, Cidade da Paz</li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Seu Consultório de Psicologia</title>
+    <style>
+        /* Estilo principal da página */
+        body {
+            /* Cor de fundo verde claro */
+            background-color: #E8F5E9; /* Um tom de verde menta claro e suave */
+            color: #38761D; /* Verde escuro para o texto para boa leitura */
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        /* Título principal */
+        h1 {
+            color: #4CAF50; /* Verde vibrante */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Contêiner principal do formulário/informações */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* Fundo branco para o formulário */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilo do formulário */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #D9EAD3;
+            border-radius: 5px;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        /* Botão de envio */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #388E3C;
+        }
+        /* Informações de contato */
+        .info-contato p {
+            margin-bottom: 10px;
+        }
+        /* Link de navegação */
+        .nav-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✉️ Entre em Contato</h1>
+    
+    <div class="container">
+        
+        <h2>Envie sua Mensagem</h2>
+
+        <form action="processa_contato.php" method="POST">
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+
+        </form>
+
+        <hr style="margin-top: 30px; border-color: #D9EAD3;">
+
+        <h2>Informações Diretas</h2>
+        
+        <div class="info-contato">
+            <p><strong>Telefone/WhatsApp:</strong> (XX) XXXXX-XXXX</p>
+            <p><strong>E-mail Direto:</strong> seuemail@psicologia.com.br</p>
+            <p><strong>Endereço do Consultório:</strong> Rua Ex
